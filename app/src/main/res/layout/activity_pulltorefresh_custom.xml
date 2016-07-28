@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<harry.com.pullrefresh.widget.PtrlMeiTuanFrameLayout
+    android:id="@+id/ptrFrame"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDrag"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/drag_me"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/ivPic0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="matrix"
+            android:src="@mipmap/pull_image"
+            />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"/>
+
+        <ImageView
+            android:id="@+id/ivPic1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/animation_refresh_second"/>
+
+        <Button
+            android:id="@+id/btnSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第二阶段"/>
+
+        <Button
+            android:id="@+id/btnThrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第三阶段"/>
+    </LinearLayout>
+</harry.com.pullrefresh.widget.PtrlMeiTuanFrameLayout>
